@@ -7,6 +7,7 @@ import connectDB from './src/config/mongodb.js';
 import connectCloudinary from './src/config/cloudinary.js';
 // Router Connection
 import songRouter from './src/routes/songRoute.js';
+import albumRouter from './src/routes/albumRoute.js';
 
 // App Config
 const app = express();
@@ -20,6 +21,7 @@ app.use(cors());
 
 // Initializing Routes
 app.use('/api/song', songRouter);
+app.use('/api/album', albumRouter);
 
 
 app.get('/', (req, res) => res.send('API Working!'));

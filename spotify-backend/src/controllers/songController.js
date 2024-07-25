@@ -3,6 +3,7 @@ import { v2 as cloudinary } from 'cloudinary';
 // Model Connection
 import songModel from '../models/songModel.js';
 
+// Add Song Function
 const addSong = async (req, res) => {
   try {
     const name = req.body.name;
@@ -33,8 +34,24 @@ const addSong = async (req, res) => {
   }
 }
 
+// List Song Function
 const listSong = async (req, res) => {
-  
+  try {
+    const allSongs = await songModel.find({});
+    res.json({ success: true, songs: allSongs });
+  } catch (error) {
+    res.json({ success: false })
+  }
 }
 
-export { addSong, listSong }
+// Remove Song Function
+const removeSong = async (req, res) => {
+  try {
+    await songModel.findByIdAndDelete(req.body.id);
+    res.json({ success: true, message: "Song Removed!"});
+  } catch (error) {
+    res.json({ success: false });
+  }
+}
+
+export { addSong, listSong, removeSong }
