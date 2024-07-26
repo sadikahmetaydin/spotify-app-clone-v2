@@ -12,6 +12,8 @@ import AddAlbum from "./pages/AddAlbum";
 import ListSong from "./pages/ListSong";
 import ListAlbum from "./pages/ListAlbum";
 
+export const url = 'http://localhost:4000';
+
 const App = () => {
   return (
     <div className="flex items-start min-h-screen">
