@@ -3,7 +3,7 @@ A mern spotify app clone website build with mongodb, express, reactjs and nodejs
 
 # 💡About this project 
 
-...
+I'll updating soon...
 
 ## ⚡Technologies
 * `MONGODB`
