@@ -3,7 +3,7 @@ A mern spotify app clone website build with mongodb, express, reactjs and nodejs
 
 # 💡About this project 
 
-I'll updating soon... ... ...
+This project better quite better than previous project because I developed MERN Stack. In this project you will see admin panel, in the admin panel there are four features. These features are Add Song, List Song, Add Album and List Album. If you want create your own album list or if you want add you own songs it's so easy to do this. And also you can add some of picture this Add Song panel or Add Album panel. After create your own Album can you see on the landing page.
 
 ## ⚡Technologies
 * `MONGODB`
